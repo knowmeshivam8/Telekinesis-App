@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Antigravity — AR Telekinesis</title>
+  <meta name="description"
+    content="Real-time AR telekinesis simulator using hand tracking. Open your palm to push neon particles with an invisible force field." />
+  <meta name="theme-color" content="#0a0a0f" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Loading Overlay -->
+  <div id="overlay">
+    <div class="spinner"></div>
+    <h1>Antigravity</h1>
+    <p id="status-text">Initializing hand tracking…</p>
+  </div>
+
+  <!-- HUD -->
+  <div id="hud">
+    <div class="hud-item">
+      <span class="hud-dot" id="hud-camera"></span>
+      Camera
+    </div>
+    <div class="hud-item">
+      <span class="hud-dot" id="hud-hand"></span>
+      Hand
+    </div>
+    <div class="hud-item">
+      <span class="hud-dot" id="hud-force"></span>
+      Force Active
+    </div>
+  </div>
+
+  <!-- Instruction -->
+  <div id="instruction">✋ Repulsion &nbsp;|&nbsp; ✊ Gravity &nbsp;|&nbsp; 🕷️ Spidey Pose = Web &nbsp;|&nbsp; 🔮 Two
+    Hands = Energy Ball</div>
+
+  <!-- Hidden webcam -->
+  <video id="webcam-video" autoplay playsinline></video>
+
+  <!-- Three.js canvas will be injected here -->
+  <canvas id="scene-canvas"></canvas>
+
+  <!-- CDN Dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4.1675469240/hands.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.3.1675466862/camera_utils.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- App -->
+  <script src="app.js"></script>
+</body>
+
+</html>
