@@ -1,4 +1,4 @@
-# Antigravity — AR Telekinesis
+# Telekinesis
 
 A browser-based AR-style demo that blends webcam hand tracking with Three.js particle effects to create a neon telekinesis experience.
 
