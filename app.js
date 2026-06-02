@@ -1,5 +1,5 @@
 /* =============================================
-   Antigravity — AR Telekinesis App v3
+   Telekinesis App v3
    Supernatural Powers + Spiderman Web Effect
    ============================================= */
 
